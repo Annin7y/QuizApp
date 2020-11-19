@@ -1,0 +1,48 @@
+<!--
+  ~  Copyright 2020 Anastasia Annin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+-->
+
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="geography_quiz">Geography Quiz</string>
+    <string name="good_luck">Good Luck!</string>
+    <string name="_1_what_is_the_capital_of_china">1.What is the capital of China?</string>
+    <string name="_2_which_u_s_state_borders_both_the_arctic_and_pacific_oceans">2.Which U.S. state borders both the Arctic and Pacific oceans?</string>
+    <string name="_3_what_is_the_longest_river_in_the_world">3.What is the longest river in the world?</string>
+    <string name="congo">Congo</string>
+    <string name="volga">Volga</string>
+    <string name="nile">Nile</string>
+    <string name="amazon">Amazon</string>
+    <string name="_4_which_of_the_following_countries_doesn_t_border_brazil">4.Which of the following countries doesn\'t border Brazil?</string>
+    <string name="france">France</string>
+    <string name="paraguay">Paraguay</string>
+    <string name="bolivia">Bolivia</string>
+    <string name="ecuador">Ecuador</string>
+    <string name="_5_pick_the_two_spanish_cities_that_are_landlocked">5.Pick the two Spanish cities that are landlocked.</string>
+    <string name="madrid">Madrid</string>
+    <string name="valencia">Valencia</string>
+    <string name="malaga">Malaga</string>
+    <string name="seville">Seville</string>
+    <string name="_6_what_two_languages_are_among_the_official_languages_of_south_africa">6.What two languages are among the official languages of South Africa?</string>
+    <string name="french">French</string>
+    <string name="swahili">Swahili</string>
+    <string name="english">English</string>
+    <string name="afrikaans">Afrikaans</string>
+    <string name="total_score">Total Score</string>
+    <string name="_0">0</string>
+    <string name="reset_score">Reset Score</string>
+
+</resources>

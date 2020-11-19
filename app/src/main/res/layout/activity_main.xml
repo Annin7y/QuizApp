@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright 2020 Anastasia Annin
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/quiz_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/geography_quiz"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/quiz_text_view"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/earth_image" />
+
+        <TextView
+            android:id="@+id/quizMessage_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quiz_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:text="@string/good_luck"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:context="com.example.android.quizapp.MainActivity">
+
+                <TextView
+                    android:id="@+id/question1_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="270dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="2dp"
+                    android:text="@string/_1_what_is_the_capital_of_china"
+                    android:textColor="#616161"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/answer1_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Question 1"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/question2_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="2dp"
+                    android:text="@string/_2_which_u_s_state_borders_both_the_arctic_and_pacific_oceans"
+                    android:textColor="#616161"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/answer2_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="10dp"
+                    android:hint="Question 2"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/question3_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="2dp"
+                android:text="@string/_3_what_is_the_longest_river_in_the_world"
+                android:textColor="#616161"
+                android:textSize="23sp" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radioGroup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_congo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/congo" />
+
+                <RadioButton
+                    android:id="@+id/radio_volga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/volga" />
+
+                <RadioButton
+                    android:id="@+id/radio_nile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/nile" />
+
+                <RadioButton
+                    android:id="@+id/radio_amazon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/amazon" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question4_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="2dp"
+                android:text="@string/_4_which_of_the_following_countries_doesn_t_border_brazil"
+                android:textColor="#616161"
+                android:textSize="23sp" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radioGroup2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_france"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButton2Clicked"
+                    android:text="@string/france" />
+
+                <RadioButton
+                    android:id="@+id/radio_paraguay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButton2Clicked"
+                    android:text="@string/paraguay" />
+
+                <RadioButton
+                    android:id="@+id/radio_bolivia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButton2Clicked"
+                    android:text="@string/bolivia" />
+
+                <RadioButton
+                    android:id="@+id/radio_ecuador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:onClick="onRadioButton2Clicked"
+                    android:text="@string/ecuador" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/question5_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="2dp"
+                android:text="@string/_5_pick_the_two_spanish_cities_that_are_landlocked"
+                android:textColor="#616161"
+                android:textSize="23sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_madrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/madrid" />
+
+            <CheckBox
+                android:id="@+id/checkbox_valencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/valencia" />
+
+            <CheckBox
+                android:id="@+id/checkbox_malaga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/malaga" />
+
+            <CheckBox
+                android:id="@+id/checkbox_seville"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/seville" />
+
+            <TextView
+                android:id="@+id/question6_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="2dp"
+                android:text="@string/_6_what_two_languages_are_among_the_official_languages_of_south_africa"
+                android:textColor="#616161"
+                android:textSize="23sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_french"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/french" />
+
+            <CheckBox
+                android:id="@+id/checkbox_swahili"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/swahili" />
+
+            <CheckBox
+                android:id="@+id/checkbox_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/english" />
+
+            <CheckBox
+                android:id="@+id/checkbox_afrikaans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/afrikaans" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/calculate_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginTop="40dp"
+                    android:onClick="calculateScore"
+                    android:text="@string/total_score" />
+
+
+                <TextView
+                    android:id="@+id/total_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="16dp"
+                    android:text="@string/_0"
+                    android:textColor="#616161"
+                    android:textSize="23sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginTop="30dp"
+                    android:onClick="resetScore"
+                    android:text="@string/reset_score" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
