@@ -1,5 +1,7 @@
 
-/* Copyright 2020 Anastasia Annin
+/* Copyright 2016 Anastasia Annin
+ *
+ * A Udacity Basics Nanodegree Project
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -27,7 +29,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import static com.example.android.quizapp.R.id.radioGroup1;
 import static com.example.android.quizapp.R.id.radioGroup2;
-
 
 public class MainActivity extends AppCompatActivity
 {
